@@ -4,8 +4,8 @@
     <div class="left-layout-container">
       <div class="user-info">
         <img v-if="gitHubUser" @click="home" :src="gitHubUser.avatar_url">
-        <div v-if="gitHubUser" class="login-name">{{gitHubUser.login}}</div>
-        <div v-if="gitHubUser">{{gitHubUser.bio}}</div>
+        <div v-if="gitHubUser" class="login-name">王庆忠</div>
+        <div v-if="gitHubUser">努力成为更好的自己</div>
       </div>
       <ul class="other-site">
         <li v-for="site in thirdPartySite" :key="site.url" @click="openThirdPartySite(site.url)">
